@@ -16,20 +16,21 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+	<nav class="navbar navbar-dark navbar-expand-sm   fixed-top">
         <div class="container">
         	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+           <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>            
+                </ul>
+            </div>            
         </div>
-        
     </nav>
 
     <header class="jumbotron">
@@ -40,8 +41,12 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                    	<img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-12 col-sm align-self-center">
+                    <button type="button" class="btn btn-warning btn-lg btn-block">Reserve Table</button>
+                </div>
+               
             </div>
         </div>
     </header>
@@ -72,8 +77,15 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            	<div class="media">
+                    
+                    <div class="media-body">
+                         <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                     </div>
+                     <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/buffet.png" alt="Weekend Grand Buffet">
+                </div> 
             </div>
         </div>
 
@@ -97,7 +109,88 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+        <div class="row row-content align-items-center">
+        	<div class="col-12 col-sm-7">
+                <div class="card ">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+
+                    	<form>
+                    		<div class="row text-left">
+                    			<label  class="col-sm-2 col-form-label">Number of Guests</label>
+                    			<div class="form-check form-check-inline">
+                    		        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    		        <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                    		        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    		        <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                    		        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    		        <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                    		        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    		        <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                    		        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    		        <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class=" col-sm-2 form-check form-check-inline">
+                    		        <input class=" form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    		        <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                                
+                            </div>
+                    	    <div class="row text-left">
+                        		<label  class="col-sm-2 col-form-label">Date and Time</label>
+                        		<div class="col-sm-3">
+                        			<input type="text" class="form-control" placeholder="Date">
+                        		</div>
+                        		<div class="col-sm-3">
+                        			<input type="text" class="form-control" placeholder="Time">
+                        		</div>
+                        	</div>
+                        	<div class="row text-center">
+                        		<div class="col-sm-6">
+                        			<button type="submit" class="btn btn-primary">Reserve</button>
+                        			
+                        		</div>
+                        	</div>
+                        	
+
+                        </form>
+
+                           
+
+
+                        
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
     </div>
+
+
 
     <footer class="footer">
         <div class="container">
